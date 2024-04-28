@@ -57,3 +57,7 @@
     @apply bg-background text-foreground;
   }
 }
+
+body {
+  @apply bg-[#d9dcdd] flex flex-col justify-center items-center min-h-screen h-full w-full;
+}

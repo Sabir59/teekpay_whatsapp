@@ -1,0 +1,8 @@
+.chat {
+  @apply w-full max-w-[1740px] mx-auto grid grid-cols-[420px_1fr] h-full max-h-[90vh] overflow-hidden;
+  &__content {
+    background-image: url('https://static.whatsapp.net/rsrc.php/v3/yl/r/gi_DckOUM5a.png');
+    background-size: contain;
+    background-color: #efeae2;
+  }
+}
