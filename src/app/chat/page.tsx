@@ -7,9 +7,7 @@ const scn = createScn(styles);
 export default function PageChat() {
   return (
     <main className={`${scn('chat')}`}>
-      <div className='max-w-[420px]'>
         <Sidebar />
-      </div>
       <div className={`${scn('chat__content')}`}>
         <ChatPannel />
       </div>

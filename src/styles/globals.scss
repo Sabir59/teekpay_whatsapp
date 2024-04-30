@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+// Work Sans Fonts
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -59,5 +61,8 @@
 }
 
 body {
-  @apply bg-[#d9dcdd] flex flex-col justify-center items-center min-h-screen h-full w-full;
+  @apply bg-[#d9dcdd];
+  // @apply bg-[#d9dcdd] flex flex-col justify-center items-center min-h-screen h-full w-full;
+  font-family: 'Segoe UI', 'Helvetica Neue', 'Helvetica', 'Lucida Grande', Arial, 'Ubuntu', 'Cantarell', 'Fira Sans',
+    sans-serif;
 }

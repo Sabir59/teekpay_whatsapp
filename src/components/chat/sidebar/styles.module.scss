@@ -1,26 +1,15 @@
 .sidebar {
-  @apply max-w-[420px] bg-white h-full min-h-screen max-h-screen overflow-y-auto;
+  @apply w-full bg-white flex flex-col;
 
   &__header {
-    @apply sticky top-0 z-10 bg-white p-5 flex flex-col gap-5;
+    @apply sticky top-0 z-10 bg-white;
   }
 
-  &::-webkit-scrollbar {
-    width: 8px;
-  }
-
-  /* Track */
-  &::-webkit-scrollbar-track {
-    // background: #f1f1f1;
-  }
-
-  /* Handle */
-  &::-webkit-scrollbar-thumb {
-    background: #bbbbbb;
-  }
-
-  /* Handle on hover */
-  &::-webkit-scrollbar-thumb:hover {
-    background: #bbbbbb;
+  &__body {
+    @apply overflow-y-auto;
+    & {
+      scrollbar-color: rgba(var(--black-rgb), 0.2) rgba(var(--white-rgb), 0.1);
+      scrollbar-width: thin;
+    }
   }
 }

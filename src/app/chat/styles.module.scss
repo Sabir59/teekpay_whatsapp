@@ -1,6 +1,7 @@
 .chat {
-  @apply w-full max-w-[1740px] mx-auto grid grid-cols-[420px_1fr] h-full max-h-[90vh] overflow-hidden;
+  @apply w-full max-w-[1700px] mx-auto flex h-full min-h-screen lg:min-h-[calc(100vh-40px)] lg:max-h-[calc(100vh-40px)] overflow-y-hidden lg:mt-5;
   &__content {
+    @apply hidden flex-[0_0_70%] lg:block;
     background-image: url('https://static.whatsapp.net/rsrc.php/v3/yl/r/gi_DckOUM5a.png');
     background-size: contain;
     background-color: #efeae2;

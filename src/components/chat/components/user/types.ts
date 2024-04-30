@@ -5,5 +5,5 @@ export interface userProps {
   name: string;
   message: string;
   time: string;
-  messagesCount: number;
+  // messagesCount: number;
 }

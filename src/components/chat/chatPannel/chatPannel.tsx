@@ -1,21 +1,32 @@
 import Image from 'next/image';
 import userImage1 from '/public/assets/images/user-image-1.png';
 import { EllipsisVertical, Search } from 'lucide-react';
+import styles from './styles.module.scss';
+import createScn from '@/utils/scn';
+import { Chat } from './chat';
+import { chat } from './data';
+
+const scn = createScn(styles);
 
 export const ChatPannel = () => {
   return (
-    <div className='chatPannel'>
-      <div className='chatPannel__header bg-slate-100 py-2 px-4'>
+    <div className={`${scn('chatPannel')}`}>
+      <div className={`${scn('chatPannel__header')}`}>
         <div className='chatPannel__header flex justify-between items-center gap-8'>
-          <div className='chatPannel__user flex items-center gap-3'>
+          <div className={`${scn('chatPannel__user')}`}>
             <Image className='chatPannel__image' src={userImage1} alt='user' width={50} />
-            <small className='chatPannel__name'>Sabir Nawaz</small>
+            <small className={`${scn('chatPannel__name')}`}>Sabir Nawaz</small>
           </div>
-          <div className='flex gap-8 items-center text-gray-500'>
+          <div className={`${scn('chatPannel__options')}`}>
             <Search />
             <EllipsisVertical />
           </div>
         </div>
+      </div>
+      <div className={`${scn('chatPannel__chat')} flex flex-col`}>
+        {chat.map(({ message, isSender, timeStamp }) => (
+          <Chat message={message} sender={isSender} timeStamp={timeStamp} />
+        ))}
       </div>
     </div>
   );
