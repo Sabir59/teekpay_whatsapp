@@ -11,6 +11,7 @@ import userPhoto9 from '/public/assets/images/user__photo-9.png';
 
 export const users = [
   {
+    slug: 'user1',
     image: userPhoto,
     name: 'Arlene',
     message: 'User opted out of paperless',
@@ -18,6 +19,7 @@ export const users = [
     // messagesCount: 234,
   },
   {
+    slug: 'user2',
     image: userPhoto1,
     name: 'Black, Marvin',
     message: 'User logged in',
@@ -25,6 +27,7 @@ export const users = [
     // messagesCount: 234,
   },
   {
+    slug: 'user3',
     image: userPhoto2,
     name: 'Долгорсүрэн',
     message: 'Paperless opt-out email sent',
@@ -32,6 +35,7 @@ export const users = [
     // messagesCount: 234,
   },
   {
+    slug: 'user4',
     image: userPhoto3,
     name: 'Nguyen, Shane',
     message: 'Paperless opt-out email sent',
@@ -39,6 +43,7 @@ export const users = [
     // messagesCount: 234,
   },
   {
+    slug: 'user5',
     image: userPhoto4,
     name: 'Батбаяр',
     message: 'User opted out of paperless',
@@ -46,6 +51,7 @@ export const users = [
     // messagesCount: 234,
   },
   {
+    slug: 'user6',
     image: userPhoto5,
     name: 'Henry, Arthur',
     message: 'User logged in',
@@ -53,6 +59,7 @@ export const users = [
     // messagesCount: 234,
   },
   {
+    slug: 'user7',
     image: userPhoto6,
     name: 'Баатар',
     message: 'Paperless opt-out email sent',
@@ -60,6 +67,7 @@ export const users = [
     // messagesCount: 234,
   },
   {
+    slug: 'user8',
     image: userPhoto7,
     name: 'Miles, Esther',
     message: 'User opted out of paperless',
@@ -67,6 +75,7 @@ export const users = [
     // messagesCount: 234,
   },
   {
+    slug: 'user9',
     image: userPhoto8,
     name: 'Ronald',
     message: 'Paperless opt-out email sent',
@@ -74,6 +83,7 @@ export const users = [
     // messagesCount: 234,
   },
   {
+    slug: 'user10',
     image: userPhoto9,
     name: 'Flores, Juanita',
     message: 'User opted out of paperless',
@@ -81,101 +91,11 @@ export const users = [
     // messagesCount: 234,
   },
   {
+    slug: 'user11',
     image: userPhoto4,
     name: 'Батбаяр',
     message: 'User opted out of paperless',
     time: '05:14 pm',
     // messagesCount: 234,
   },
-  //   {
-  //     image: userImage1,
-  //     name: 'Goodgod UIUX',
-  //     message: 'How u see am na?',
-  //     time: '3:14',
-  //     messagesCount: 234,
-  //   },
-  //   {
-  //     image: userImage1,
-  //     name: 'Sabir Nawaz',
-  //     message: 'Hello World',
-  //     time: '3:14',
-  //     messagesCount: 234,
-  //   },
-  //   {
-  //     image: userImage1,
-  //     name: 'Sabir Nawaz',
-  //     message: 'Hello World',
-  //     time: '3:14',
-  //     messagesCount: 234,
-  //   },
-  //   {
-  //     image: userImage1,
-  //     name: 'Sabir Nawaz',
-  //     message: 'Hello World',
-  //     time: '3:14',
-  //     messagesCount: 234,
-  //   },
-  //   {
-  //     image: userImage1,
-  //     name: 'Sabir Nawaz',
-  //     message: 'Hello World',
-  //     time: '3:14',
-  //     messagesCount: 234,
-  //   },
-  //   {
-  //     image: userImage1,
-  //     name: 'Sabir Nawaz',
-  //     message: 'Hello World',
-  //     time: '3:14',
-  //     messagesCount: 234,
-  //   },
-  //   {
-  //     image: userImage1,
-  //     name: 'Sabir Nawaz',
-  //     message: 'Hello World',
-  //     time: '3:14',
-  //     messagesCount: 234,
-  //   },
-  //   {
-  //     image: userImage1,
-  //     name: 'Sabir Nawaz',
-  //     message: 'Hello World',
-  //     time: '3:14',
-  //     messagesCount: 234,
-  //   },
-  //   {
-  //     image: userImage1,
-  //     name: 'Sabir Nawaz',
-  //     message: 'Hello World',
-  //     time: '3:14',
-  //     messagesCount: 234,
-  //   },
-  //   {
-  //     image: userImage1,
-  //     name: 'Sabir Nawaz',
-  //     message: 'Hello World',
-  //     time: '3:14',
-  //     messagesCount: 234,
-  //   },
-  //   {
-  //     image: userImage1,
-  //     name: 'Sabir Nawaz',
-  //     message: 'Hello World',
-  //     time: '3:14',
-  //     messagesCount: 234,
-  //   },
-  //   {
-  //     image: userImage1,
-  //     name: 'Sabir Nawaz',
-  //     message: 'Hello World',
-  //     time: '3:14',
-  //     messagesCount: 234,
-  //   },
-  //   {
-  //     image: userImage1,
-  //     name: 'Sabir Nawaz',
-  //     message: 'Hello World',
-  //     time: '3:14',
-  //     messagesCount: 234,
-  //   },
 ];

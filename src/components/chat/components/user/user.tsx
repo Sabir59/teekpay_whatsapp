@@ -6,12 +6,13 @@ import styles from './styles.module.scss';
 import createScn from '@/utils/scn';
 
 import stringTruncateHandler from '@/utils/stringTruncateHandler';
+import Link from 'next/link';
 
 const scn = createScn(styles);
 
-export const User = ({ image, name, message, time }: userProps) => {
+export const User = ({ image, name, message, time, slug }: userProps) => {
   return (
-    <div className={`${scn('user')}`}>
+    <Link href={`/chat/${slug}`} className={`${scn('user')}`}>
       {/* Photo */}
       <div className={`${scn('user__frame')}`}>
         <Image src={image} width={50} height={50} alt='user' className={`${scn('user__photo')}`} />
@@ -29,6 +30,6 @@ export const User = ({ image, name, message, time }: userProps) => {
           {/* <small className={`${scn('user__messages')}`}>{messagesCount}</small> */}
         </div>
       </div>
-    </div>
+    </Link>
   );
 };

@@ -6,7 +6,7 @@ import tailOut from '/public/assets/images/tail-out.svg';
 
 interface ChatProps {
   message: string;
-  sender: 'user' | 'contact';
+  sender: string | 'user' | 'contact';
   timeStamp: string;
 }
 

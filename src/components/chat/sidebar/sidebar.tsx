@@ -16,8 +16,8 @@ export const Sidebar = () => {
         <SearchBar />
       </div>
       <div className={`${scn('sidebar__body')}`}>
-        {users.map(({ image, name, message, time }) => (
-          <User key={name} image={image} name={name} message={message} time={time} />
+        {users.map(({ slug, image, name, message, time }) => (
+          <User slug={slug} key={slug} image={image} name={name} message={message} time={time} />
         ))}
       </div>
     </div>

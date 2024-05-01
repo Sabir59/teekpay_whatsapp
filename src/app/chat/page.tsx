@@ -1,16 +1,13 @@
-import { ChatPannel, Sidebar } from '@/components/chat';
-import styles from './styles.module.scss';
-import createScn from '@/utils/scn';
+import { ChatPannel } from '@/components/chat';
 
-const scn = createScn(styles);
+interface PageChatProps {
+  slug: string;
+}
 
-export default function PageChat() {
+export default function ageChat({ slug }: PageChatProps) {
   return (
-    <main className={`${scn('chat')}`}>
-        <Sidebar />
-      <div className={`${scn('chat__content')}`}>
-        <ChatPannel />
-      </div>
+    <main>
+      <ChatPannel slug={slug} />
     </main>
   );
 }
