@@ -1,10 +1,10 @@
 import { ChatPannel } from '@/components/chat';
 
-interface PageChatProps {
+interface pageChatProps {
   slug: string;
 }
 
-export default function ageChat({ slug }: PageChatProps) {
+export default function PageChat({ slug }: pageChatProps) {
   return (
     <main>
       <ChatPannel slug={slug} />

@@ -1,16 +1,14 @@
 import Image from 'next/image';
 import React from 'react';
 
-import tailIn from '/public/assets/images/tail-in.svg';
-import tailOut from '/public/assets/images/tail-out.svg';
 
-interface ChatProps {
+interface chatProps {
   message: string;
   sender: string | 'user' | 'contact';
   timeStamp: string;
 }
 
-export const Chat = ({ message, sender, timeStamp }: ChatProps) => {
+export const Chat = ({ message, sender, timeStamp }: chatProps) => {
   const isSender = sender === 'user';
 
   return (

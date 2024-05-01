@@ -32,7 +32,7 @@ export const ChatPannel = ({ slug }: { slug: string }) => {
       <ChatHeader name={name} image={image} />
       <div className={`${scn('chatPannel__chat')} flex flex-col`}>
         {filteredChat.map(({ slug, message, isSender, timeStamp }) => (
-          <Chat message={message} sender={isSender} timeStamp={timeStamp} key={slug} />
+          <Chat message={message} sender={isSender} timeStamp={timeStamp} key={name} />
         ))}
       </div>
     </div>
