@@ -8,6 +8,7 @@ import { ChatHeader } from './chatHeader';
 import { users } from '../components/user/data';
 import { useEffect, useState } from 'react';
 import { StaticImageData } from 'next/image';
+import userPhoto from '/public/assets/images/user__photo.png';
 
 const scn = createScn(styles);
 
@@ -29,11 +30,15 @@ export const ChatPannel = ({ slug }: { slug: string }) => {
   return (
     <div className={`${scn('chatPannel')}`}>
       {/* {console.log(filterdUser)} */}
-      <ChatHeader name={name} image={image} />
+      {!slug ? <ChatHeader name={'Arlene'} image={userPhoto} /> : <ChatHeader name={name} image={image} />}
       <div className={`${scn('chatPannel__chat')} flex flex-col`}>
-        {filteredChat.map(({ slug, message, isSender, timeStamp }) => (
-          <Chat message={message} sender={isSender} timeStamp={timeStamp} key={name} />
-        ))}
+        {!slug
+          ? chat.map(({ message, isSender, timeStamp }) => (
+              <Chat message={message} sender={isSender} timeStamp={timeStamp} key={name} />
+            ))
+          : filteredChat.map(({ message, isSender, timeStamp }) => (
+              <Chat message={message} sender={isSender} timeStamp={timeStamp} key={name} />
+            ))}
       </div>
     </div>
   );
