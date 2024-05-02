@@ -1,13 +1,16 @@
+"use client"
+
+
 import { ChatPannel } from '@/components/chat';
+import { useRouter } from 'next/navigation'; // Import useRouter from 'next/router'
 
-interface pageChatProps {
-  slug: string;
-}
+export default function PageChat() {
+  const router = useRouter(); // Initialize useRouter
+  const slug = router.prefetch.name; // Retrieve the slug parameter from the router query
 
-export default function PageChat({ slug }: pageChatProps) {
   return (
     <main>
-      <ChatPannel slug={slug} />
+      {slug && <ChatPannel slug={slug } />} {/* Render ChatPannel only if slug is available */}
     </main>
   );
 }
