@@ -1,5 +1,4 @@
-"use client"
-
+'use client';
 
 import { ChatPannel } from '@/components/chat';
 import { useRouter } from 'next/navigation'; // Import useRouter from 'next/router'
@@ -10,7 +9,7 @@ export default function PageChat() {
 
   return (
     <main>
-      {slug && <ChatPannel slug={slug } />} {/* Render ChatPannel only if slug is available */}
+      {slug && <ChatPannel slug={slug} />} {/* Render ChatPannel only if slug is available */}
     </main>
   );
 }

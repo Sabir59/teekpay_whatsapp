@@ -13,7 +13,7 @@
     @apply flex gap-5 items-center text-gray-500;
   }
   &__chat {
-    @apply p-8 overflow-y-auto;
+    @apply p-4 md:p-8 overflow-y-auto;
     & {
       scrollbar-color: rgba(var(--black-rgb), 0.2) rgba(var(--white-rgb), 0.1);
       scrollbar-width: thin;
